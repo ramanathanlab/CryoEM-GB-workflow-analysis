@@ -66,7 +66,7 @@ for line in f:
     #t = float(string.split(s[7],'/')[0])
     t = float(s[7].split('/')[0])
     tlist.append(t)
-
+f.close()
 n = len(tlist)
 
 # calculate the mean
@@ -108,11 +108,12 @@ if t_avg != 0.0:
 
 if not do_quiet:
   # print results
-  print('Nanoseconds per day:    %g' % ns_per_day)
-  print()
-  print('Mean time per step:     %g' % t_avg)
+  #print('Nanoseconds per day:    %g' % ns_per_day)
+  #print()
+  #print('Mean time per step:     %g' % t_avg)
   #print('Variance:               %g' % t_var)
-  print('Standard deviation:     %g' % t_std)
+  #print('Standard deviation:     %g' % t_std)
+  print(f"{ns_per_day}, {t_avg}, {t_std}")
 elif not do_remove:
   print('%g' % ns_per_day)
 
