@@ -1,6 +1,8 @@
 # CryoEM-GB-workflow-analysis
 Analysis of workflow runs for the CryoEM-MD-AI Gordon Bell Submission
 
+Analysis input files stored in: `/lambda_stor/homes/abrace/data/intelligent-resolution-cryoem-2022.tar.gz`
+
 
 Runs in: `/global/cfs/cdirs/m1759/msalim/`
 
